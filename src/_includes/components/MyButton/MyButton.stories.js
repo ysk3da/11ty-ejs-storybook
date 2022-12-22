@@ -3,16 +3,30 @@ import '../../../styles/components/MyButton.scss';
 
 export default {
   title: 'MyButton', // storybookでリストに表示されるタイトル名
-  component: MyButton // importしたコンポーネント
+  component: MyButton, // importしたコンポーネント
+  argTypes: {
+    label: { control: 'text' },
+    type: {
+      options: ['submit','reset','button'],
+      control: { type: 'radio'}
+    },
+    disabled: { disable: false },
+    modefireClass: { control: 'text' },
+    jsClass: { control: 'text' },
+  },
 };
 
-export const nomal = () => {
-  // コンポーネントに渡す変数を宣言
-  const label = 'Click Here';
-  const type = 'button';
-  const disabled = false;
-  const modefireClass = '';
-  const jsClass = '';
+export const nomal = (args) => {
 
-  return MyButton({ label, type, disabled, modefireClass, jsClass }); // 各変数を引数に入れてコンポーネントを表示
+  let props = args;
+
+  return MyButton({ props }); // 各変数を引数に入れてコンポーネントを表示
 };
+
+nomal.args = {
+  label: 'Click Here',
+  type: 'button',
+  disabled: false,
+  modefireClass: '',
+  jsClass: '',
+}

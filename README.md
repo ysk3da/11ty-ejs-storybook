@@ -111,6 +111,12 @@ npm i -D @storybook/addon-a11y @storybook/addon-controls @storybook/addon-notes 
 
 @storybook/addon-postcss
 
+## webpack5
+
+```
+npm i -D @storybook/builder-webpack5 @storybook/manager-webpack5
+```
+
 
 ## Reference
 

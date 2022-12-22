@@ -1,11 +1,16 @@
-<%# //初期値を設定%>
-<% if (typeof disabled === 'undefined') { var disabled = false; } %>
-<% if (typeof type === 'undefined') { var type = 'button'; } %>
-<% if (typeof label === 'undefined') { var label = ''; } %>
-<% if (typeof modefireClass === 'undefined') { var modefireClass = ''; } %>
-<% if (typeof jsClass === 'undefined') { var jsClass = ''; } %>
-<%# //初期値を設定%>
-
-<button class="my-button <%= modefireClass %> <%= jsClass %>" <%= disabled ? 'disabled' : '' %> type=<%= type %> >
-  <%= label %>
+<%# 初期値を設定// %>
+<%
+if(typeof props === 'undefined') {
+  const props = {
+    disabled: false, // boolean
+    type: 'button', // submit | reset | button
+    label: 'MyButton Label', // html | string
+    modefireClass: '', // string
+    jsClass: '', // string
+  }
+}
+%>
+<%# //初期値を設定 %>
+<button class="my-button <%= props.modefireClass %> <%= props.jsClass %>" <%= props.disabled ? 'disabled' : '' %> type="<%= props.type %>" >
+  <%= props.label %>
 </button>

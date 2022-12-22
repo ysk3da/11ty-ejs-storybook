@@ -10,7 +10,7 @@ module.exports = {
     config.module.rules.push(
       {
         test: /\.ejs$/,
-        loaders: ['ejs-compiled-loader'],
+        use: ['ejs-compiled-loader'],
         // 読み込む予定のEJSのディレクトリを指定する
         include: path.resolve(__dirname, '../src/_includes/components/')
       },
@@ -51,4 +51,12 @@ module.exports = {
     '@storybook/addon-postcss'
   ],
   "framework": "@storybook/html",
+  core: {
+    builder: {
+      name: 'webpack5',
+      options: {
+        fsCache: true,
+      },
+    },
+  },
 }
