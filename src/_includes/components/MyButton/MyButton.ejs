@@ -6,4 +6,6 @@
 <% if (typeof jsClass === 'undefined') { var jsClass = ''; } %>
 <%# //初期値を設定%>
 
-<button <%= disabled ? 'disabled' : '' %> type=<%= type %> class="<%= modefireClass %> <%= jsClass %>" ><%= label %></button>
+<button class="my-button <%= modefireClass %> <%= jsClass %>" <%= disabled ? 'disabled' : '' %> type=<%= type %> >
+  <%= label %>
+</button>

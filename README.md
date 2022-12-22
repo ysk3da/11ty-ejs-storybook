@@ -86,7 +86,40 @@ module.exports = {
 };
 ```
 
+## storybookにSCSSを反映する
+
+
+```shell
+npm install style-loader@2.0.0 css-loader@5.2.6 sass-loader@10.0.0
+
+npm i sass
+```
+
+## storybookのアドオンを追加する
+
+変更点
+
+@storybook/addon-knobs
+→
+@storybook/addon-controls
+
+```shell
+npm i -D @storybook/addon-a11y @storybook/addon-controls @storybook/addon-notes @storybook/addon-storysource
+```
+
+これも追加せよとのこと
+
+@storybook/addon-postcss
+
 
 ## Reference
 
 [EJS de Storybook入門](https://qiita.com/nokonokojr/items/1fd879a392c165651bf6)
+
+
+## memo
+
+ babel-loader   ^8.3.0  →   ^9.1.0
+ css-loader     ^5.2.6  →   ^6.7.3
+ sass-loader   ^10.0.0  →  ^13.2.0
+ style-loader   ^2.0.0  →   ^3.3.1

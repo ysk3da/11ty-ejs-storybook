@@ -1,4 +1,5 @@
 import MyButton from './MyButton.ejs'; // コンポーネントを読み込む
+import '../../../styles/components/MyButton.scss';
 
 export default {
   title: 'MyButton', // storybookでリストに表示されるタイトル名
