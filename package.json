@@ -1,0 +1,30 @@
+{
+  "name": "11ty-ejs-storybook",
+  "version": "1.0.0",
+  "description": "11ty (ejs) + storybook",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2",
+    "@babel/core": "^7.20.5",
+    "@storybook/addon-actions": "^6.5.15",
+    "@storybook/addon-essentials": "^6.5.15",
+    "@storybook/addon-interactions": "^6.5.15",
+    "@storybook/addon-links": "^6.5.15",
+    "@storybook/builder-webpack4": "^6.5.15",
+    "@storybook/html": "^6.5.15",
+    "@storybook/manager-webpack4": "^6.5.15",
+    "@storybook/testing-library": "^0.0.13",
+    "babel-loader": "^8.3.0"
+  },
+  "dependencies": {
+    "ejs-compiled-loader": "^3.1.0"
+  }
+}
