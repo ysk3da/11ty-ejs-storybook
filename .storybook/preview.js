@@ -1,4 +1,3 @@
-// import 'ress'; // リセットCSS
 import '../src/styles/global.scss'; // グローバルスタイル
 
 export const parameters = {
