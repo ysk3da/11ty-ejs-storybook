@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "gen-component-help": "npx hygen generator help",
+    "add-component": "npx hygen generator components"
   },
   "keywords": [],
   "author": "",
@@ -34,6 +36,7 @@
     "@storybook/addon-postcss": "^2.0.0",
     "css-loader": "^5.2.6",
     "ejs-compiled-loader": "^3.1.0",
+    "hygen": "^6.2.11",
     "ress": "^5.0.2",
     "sass": "^1.57.1",
     "sass-loader": "^10.0.0",
