@@ -47,7 +47,7 @@ module.exports = {
     '@storybook/addon-a11y',
     '@storybook/addon-controls',
     '@storybook/addon-storysource',
-    '@storybook/addon-notes',
+    '@storybook/addon-notes/register',
     '@storybook/addon-postcss'
   ],
   "framework": "@storybook/html",
