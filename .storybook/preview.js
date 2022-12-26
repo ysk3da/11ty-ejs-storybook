@@ -1,4 +1,5 @@
-// import '../src/scss/css/bundle.scss'; // グローバルスタイル
+// import 'ress'; // リセットCSS
+import '../src/styles/global.scss'; // グローバルスタイル
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },

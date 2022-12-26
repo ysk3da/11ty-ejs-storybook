@@ -124,8 +124,3 @@ npm i -D @storybook/builder-webpack5 @storybook/manager-webpack5
 
 
 ## memo
-
- babel-loader   ^8.3.0  →   ^9.1.0
- css-loader     ^5.2.6  →   ^6.7.3
- sass-loader   ^10.0.0  →  ^13.2.0
- style-loader   ^2.0.0  →   ^3.3.1
