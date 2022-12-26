@@ -1,5 +1,25 @@
 import '../src/styles/global.scss'; // グローバルスタイル
 
+// ビューポートの追加
+import { MINIMAL_VIEWPORTS} from '@storybook/addon-viewport';
+
+const customViewports = {
+  kindleFire2: {
+    name: 'Kindle Fire 2',
+    styles: {
+      width: '600px',
+      height: '963px',
+    },
+  },
+  kindleFireHD: {
+    name: 'Kindle Fire HD',
+    styles: {
+      width: '533px',
+      height: '801px',
+    },
+  },
+};
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
@@ -13,5 +33,11 @@ export const parameters = {
     config: {},
     options: {},
     manual: true,
+  },
+  viewport: {
+    viewports: {
+      ...MINIMAL_VIEWPORTS,
+      ...customViewports,
+    },
   },
 }

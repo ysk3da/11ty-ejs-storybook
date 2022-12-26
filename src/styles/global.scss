@@ -1,1 +1,9 @@
-@use 'ress';
+@use 'ress'; // リセットCSSは既存案件の場合、異なる可能性があるので必ず確認する
+
+a,
+button {
+  &:hover {
+    // hoverのときだけ transition
+    transition: all 300ms 0ms;
+  }
+}
