@@ -18,7 +18,7 @@ if(typeof bodyId === 'undefined') {
 if(typeof bodyClassNames === 'undefined') {
   const bodyClassNames = '';
 };
-%%>
+-%%>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
