@@ -1,9 +1,9 @@
 import MyButton from './MyButton.ejs'; // コンポーネントを読み込む
-import '../../../styles/components/MyButton.scss';
+import '../../../styles/components/_MyButton.scss';
 import markdown from './MyButton.md';
 
 export default {
-  title: 'MyButton', // storybookでリストに表示されるタイトル名
+  title: 'Components/MyButton', // storybookでリストに表示されるタイトル名
   component: MyButton, // importしたコンポーネント
   argTypes: {
     label: { control: 'text' },
@@ -20,14 +20,14 @@ export default {
   },
 };
 
-export const nomal = (args) => {
+export const normal = (args) => {
 
   let props = args;
 
   return MyButton({ props }); // 各変数を引数に入れてコンポーネントを表示
 };
 
-nomal.args = {
+normal.args = {
   label: 'Click Here',
   type: 'button',
   disabled: false,
