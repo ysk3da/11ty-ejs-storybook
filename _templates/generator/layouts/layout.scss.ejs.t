@@ -1,8 +1,6 @@
 ---
 to: src/styles/layouts/_<%= name %>.scss
 ---
-<% underscoredName = h.inflection.underscore(name) -%>
-
-.<%= underscoredName %> {
+.<%= h.changeCase.param(name) %> {
   width: 100%;
 }

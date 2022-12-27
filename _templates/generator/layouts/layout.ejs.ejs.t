@@ -1,7 +1,6 @@
 ---
 to: src/_includes/layouts/<%= name %>/<%= name %>.ejs
 ---
-<% underscoredName = h.inflection.underscore(name) -%>
 <%%
 if(typeof content === 'undefined') {
   const content = 'コンテンツが入ります';
@@ -29,7 +28,7 @@ if(typeof bodyClassNames === 'undefined') {
   <meta name="description" content="<%%= description %>">
   <link ref="stylesheet" href="/css/global.css" />
 </head>
-<body id="<%%= bodyId %>" class="<%= underscoredName %> <%%= bodyClassNames %>">
+<body id="<%%= bodyId %>" class="<%= h.changeCase.param(name) %> <%%= bodyClassNames %>">
   <%#%- include("../components/TheHeader/TheHeader.ejs", {props:{classNames: ""}}) -%>
   <main>
     <%%- content %>

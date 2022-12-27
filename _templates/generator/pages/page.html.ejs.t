@@ -1,6 +1,4 @@
 ---
-to: dist/<%= underscoredName %>.html
+to: dist/<%= h.changeCase.param(name) %>.html
 ---
-<% underscoredName = h.inflection.underscore(name) -%>
-
 ※これが表示されている場合は、11ty build を行ってください。

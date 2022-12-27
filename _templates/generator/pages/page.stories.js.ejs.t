@@ -3,7 +3,7 @@ to: src/pages/<%= name %>/<%= name %>.stories.js
 ---
 <% camelizedName = h.inflection.camelize(name) -%>
 <% underscoredName = h.inflection.underscore(name) -%>
-import <%= camelizedName %> from '../../../dist/<%= underscoredName %>.html';
+import <%= camelizedName %> from '../../../dist/<%= h.changeCase.param(name) %>.html';
 import '../../styles/pages/_<%= name %>.scss';
 import markdown from './<%= name %>.md';
 

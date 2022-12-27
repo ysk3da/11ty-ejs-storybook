@@ -1,7 +1,7 @@
 ---
 to: src/pages/<%= name %>/<%= name %>.ejs
 ---
-<% underscoredName = h.inflection.underscore(name) -%>
+<#% underscoredName = h.inflection.underscore(name) -%>
 <%
 var dt = new Date();
 var y = dt.getFullYear();
@@ -13,11 +13,11 @@ var today = y + "-" + m + "-" + d;
 layout: layouts/TheLayout/TheLayout.ejs
 title: <%= name %>のタイトル
 description: <%= name %>の概要
-bodyId: <%= underscoredName %>
-bodyClassNames: <%= underscoredName %>
-permalink: <%= underscoredName %>.html
+bodyId: <%= h.changeCase.param(name) %>
+bodyClassNames: <%= h.changeCase.param(name) %>
+permalink: <%= h.changeCase.param(name) %>.html
 date: <%= today %>
 ---
-<div class="<%= underscoredName %>">
+<div class="<%= h.changeCase.param(name) %>">
   <%= name %>
 </div>
