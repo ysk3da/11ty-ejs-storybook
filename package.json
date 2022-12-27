@@ -10,7 +10,8 @@
     "build-storybook": "build-storybook",
     "gen-component-help": "npx hygen generator help",
     "add-component": "npx hygen generator components",
-    "add-layout": "npx hygen generator layouts"
+    "add-layout": "npx hygen generator layouts",
+    "add-page": "npx hygen generator pages"
   },
   "keywords": [],
   "author": "",
