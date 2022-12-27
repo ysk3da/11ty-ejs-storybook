@@ -42,12 +42,15 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({"src/scripts": "js"});
 
   // ejs offcial for customize
-  let ejs = require("ejs");
-  eleventyConfig.setLibrary("ejs", ejs);
+  // let ejs = require("ejs");
+  // eleventyConfig.setLibrary("ejs", ejs);
 
 
   // You can return your Config object (optional).
   return {
+    templateFormats: [
+      "ejs",
+    ],
     dir: {
       input: 'src',
       output: 'dist'
