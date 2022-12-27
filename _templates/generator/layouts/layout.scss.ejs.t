@@ -1,5 +1,5 @@
 ---
-to: src/styles/components/_<%= name %>.scss
+to: src/styles/layouts/_<%= name %>.scss
 ---
 <% underscoredName = h.inflection.underscore(name) -%>
 

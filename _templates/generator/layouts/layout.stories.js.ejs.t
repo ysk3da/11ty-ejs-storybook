@@ -1,14 +1,14 @@
 ---
-to: src/_includes/components/<%= name %>/<%= name %>.stories.js
+to: src/_includes/layouts/<%= name %>/<%= name %>.stories.js
 ---
 <% camelizedName = h.inflection.camelize(name) -%>
 
 import <%= camelizedName %>Template from './<%= name %>.ejs';
-import '../../../styles/components/_<%= name %>.scss';
+import '../../../styles/layouts/_<%= name %>.scss';
 import markdown from './<%= name %>.md';
 
 export default {
-  title: 'Components/<%= camelizedName %>s',
+  title: 'Layouts/<%= camelizedName %>s',
   component: <%= camelizedName %>Template,
   argTypes: {
     label: { control: 'text' },

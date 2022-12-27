@@ -1,10 +1,13 @@
 ---
 to: src/_includes/components/<%= name %>/<%= name %>.ejs
 ---
+<% underscoredName = h.inflection.underscore(name) -%>
+
 <%%
 if(typeof props === 'undefined') {
   const props = {}
 }
 %>
-<p><%= name %> component</p>
-<%% props.label %>
+<div class="<%= underscoredName %>">
+  <%%= props.label %> component
+</div>
