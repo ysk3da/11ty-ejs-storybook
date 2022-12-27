@@ -117,6 +117,10 @@ npm i -D @storybook/addon-a11y @storybook/addon-controls @storybook/addon-notes 
 npm i -D @storybook/builder-webpack5 @storybook/manager-webpack5
 ```
 
+## hygenの導入
+
+[[Vue.js] Hygenで作るコンポーネントジェネレーター](https://tenderfeel.xsrv.jp/javascript/4244/)
+
 
 ## Reference
 
