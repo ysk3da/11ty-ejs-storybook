@@ -7,7 +7,11 @@ export default {
   title: 'Layouts/TheLayouts',
   component: TheLayoutTemplate,
   argTypes: {
-    label: { control: 'text' },
+    content: { control: 'text' },
+    title: { control: 'text' },
+    description: { control: 'text' },
+    bodyId: { control: 'text' },
+    bodyClassNames: { control: 'text' },
   },
   parameters: {
     notes: { markdown } // markdown 読み込み
@@ -16,11 +20,13 @@ export default {
 
 export const normal = (args) => {
 
-  let props = args;
-
-  return TheLayoutTemplate({ props }); // 各変数を引数に入れてコンポーネントを表示
+  return TheLayoutTemplate({ ...args }); // 各変数を引数に入れてコンポーネントを表示
 };
 
 normal.args = {
-  label: 'TheLayout',
+  content: 'コンテンツが入ります',
+  title: 'Default title',
+  description: 'Default description',
+  bodyId: '',
+  bodyClassNames: '',
 }

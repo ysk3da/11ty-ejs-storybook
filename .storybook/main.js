@@ -12,7 +12,7 @@ module.exports = {
         test: /\.ejs$/,
         use: ['ejs-compiled-loader'],
         // 読み込む予定のEJSのディレクトリを指定する
-        include: path.resolve(__dirname, '../src/_includes/components/')
+        include: path.resolve(__dirname, '../src/')
       },
       {
         test: /\.s[ac]ss$/i,

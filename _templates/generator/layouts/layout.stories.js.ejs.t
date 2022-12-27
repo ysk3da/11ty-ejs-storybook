@@ -11,7 +11,11 @@ export default {
   title: 'Layouts/<%= camelizedName %>s',
   component: <%= camelizedName %>Template,
   argTypes: {
-    label: { control: 'text' },
+    content: { control: 'text' },
+    title: { control: 'text' },
+    description: { control: 'text' },
+    bodyId: { control: 'text' },
+    bodyClassNames: { control: 'text' },
   },
   parameters: {
     notes: { markdown } // markdown 読み込み
@@ -20,11 +24,13 @@ export default {
 
 export const normal = (args) => {
 
-  let props = args;
-
-  return <%= camelizedName %>Template({ props }); // 各変数を引数に入れてコンポーネントを表示
+  return <%= camelizedName %>Template({ ...args }); // 各変数を引数に入れてコンポーネントを表示
 };
 
 normal.args = {
-  label: '<%= name %>',
+  content: 'コンテンツが入ります',
+  title: 'Default title',
+  description: 'Default description',
+  bodyId: '',
+  bodyClassNames: '',
 }
