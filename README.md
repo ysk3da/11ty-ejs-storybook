@@ -121,6 +121,11 @@ npm i -D @storybook/builder-webpack5 @storybook/manager-webpack5
 
 [[Vue.js] Hygenで作るコンポーネントジェネレーター](https://tenderfeel.xsrv.jp/javascript/4244/)
 
+## Dart Sassのためのファイル構成の考察
+
+[Sassで@useと@forwardを使ったサイト設計 - @importから切り替える手順](https://yumegori.com/dart-sass-method)
+
+[]()
 
 ## Reference
 
