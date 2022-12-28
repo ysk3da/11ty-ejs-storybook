@@ -26,7 +26,7 @@ if(typeof bodyClassNames === 'undefined') {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%%= title %></title>
   <meta name="description" content="<%%= description %>">
-  <link ref="stylesheet" href="/css/global.css" />
+  <link ref="stylesheet" href="/css/style.css" />
 </head>
 <body id="<%%= bodyId %>" class="<%= h.changeCase.param(name) %> <%%= bodyClassNames %>">
   <%#%- include("../components/TheHeader/TheHeader.ejs", {props:{classNames: ""}}) -%>

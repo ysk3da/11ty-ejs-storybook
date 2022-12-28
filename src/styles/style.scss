@@ -1,0 +1,13 @@
+// @use 'ress'; // リセットCSSは既存案件の場合、異なる可能性があるので必ず確認する
+@use '../../node_modules/ress/ress.css';
+@use 'global';
+@use 'components';
+
+a,
+button {
+  &:hover {
+    // hoverのときだけ transition
+    transition: all 300ms 0ms;
+  }
+}
+

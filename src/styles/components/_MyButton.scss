@@ -1,4 +1,5 @@
-@use '../variables/easing.scss' as easing;
+// @use '../variables/easing.scss' as easing;
+@use '../global' as g;
 
 .my-button {
   border-radius: 0.25em;
@@ -10,7 +11,7 @@
   font-size: 14px;
   &:hover {
     background-color: #fff;
-    transition-timing-function: easing.$easeInBack;
+    transition-timing-function: g.$easeInBack;
   }
   &:disabled {
     pointer-events: none;
