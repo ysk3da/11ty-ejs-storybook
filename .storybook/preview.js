@@ -1,4 +1,4 @@
-import '../src/styles/style.scss'; // グローバルスタイル
+import '../src/styles/global/_index.scss'; // グローバルスタイル
 
 // ビューポートの追加
 import { MINIMAL_VIEWPORTS} from '@storybook/addon-viewport';
