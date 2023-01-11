@@ -1,3 +1,4 @@
+const changeCase = require("change-case");
 const fs = require('fs');
 const indexPath = 'src/styles/components/_index.scss';
 // 文字コードを直接指定
@@ -49,7 +50,7 @@ module.exports = {
         // const props = have_props ? '(props)' : '()'
         // const tag = args.tag ? args.tag : 'div'
         // return { ...answers, path, abs_path, type_annotate, props, tag }
-        indexScss += `\n@forward '../../_includes/components/${answers.name}/${answers.name}';`;
+        indexScss += `\n@forward '../../_includes/components/${answers.name}/c-${changeCase.param(answers.name)}';`;
         fs.writeFileSync(indexPath, indexScss, (err) => {
           if (err) throw err;
           console.log('components _index.scss success');
