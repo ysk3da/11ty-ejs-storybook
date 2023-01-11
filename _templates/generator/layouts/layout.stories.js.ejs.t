@@ -4,7 +4,7 @@ to: src/_includes/layouts/<%= layout_name %>/<%= layout_name %>.stories.js
 <% camelizedName = h.inflection.camelize(layout_name) -%>
 
 import <%= camelizedName %>Template from './<%= layout_name %>.ejs';
-import './_<%= layout_name %>.scss';
+import './_l-<%= h.changeCase.param(layout_name) %>.scss';
 import markdown from './<%= layout_name %>.md';
 
 export default {

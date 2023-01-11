@@ -1,3 +1,4 @@
+const changeCase = require("change-case");
 const fs = require('fs');
 const indexPath = 'src/styles/layouts/_index.scss';
 // 文字コードを直接指定
@@ -49,7 +50,7 @@ module.exports = {
         // const tag = args.tag ? args.tag : 'div'
         // return { ...answers, path, abs_path, type_annotate, props, tag }
         if(answers.have_style){
-          indexScss += `\n@forward '../../_includes/layouts/${answers.layout_name}/${answers.layout_name}';`;
+          indexScss += `\n@forward '../../_includes/layouts/${answers.layout_name}/c-${changeCase.param(answers.layout_name)}';`;
           fs.writeFileSync(indexPath, indexScss, (err) => {
             if (err) throw err;
             console.log('layouts _index.scss success');
