@@ -1,5 +1,5 @@
 ---
-to: src/_includes/layouts/<%= name %>/<%= name %>.ejs
+to: src/_includes/layouts/<%= layout_name %>/<%= layout_name %>.ejs
 ---
 <%%
 if(typeof content === 'undefined') {
@@ -28,7 +28,7 @@ if(typeof bodyClassNames === 'undefined') {
   <meta name="description" content="<%%= description %>">
   <link ref="stylesheet" href="/css/style.css" />
 </head>
-<body id="<%%= bodyId %>" class="<%= h.changeCase.param(name) %> <%%= bodyClassNames %>">
+<body id="<%%= bodyId %>" class="l-<%= h.changeCase.param(layout_name) %> <%%= bodyClassNames %>">
   <%#%- include("../components/TheHeader/TheHeader.ejs", {props:{classNames: ""}}) -%>
   <main>
     <%%- content %>

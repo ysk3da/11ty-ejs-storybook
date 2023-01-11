@@ -1,4 +1,4 @@
 ---
-to: src/_includes/layouts/<%= name %>/<%= name %>.md
+to: src/_includes/layouts/<%= layout_name %>/<%= layout_name %>.md
 ---
-# <%= name %>
+# <%= layout_name %>

@@ -1,6 +1,6 @@
 ---
-to: src/_includes/layouts/<%= name %>/_<%= name %>.scss
+to: '<%= have_style? `src/_includes/layouts/${layout_name}/_${layout_name}.scss` : null %>'
 ---
-.<%= h.changeCase.param(name) %> {
+.l-<%= h.changeCase.param(layout_name) %> {
   width: 100%;
 }

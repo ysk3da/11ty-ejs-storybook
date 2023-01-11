@@ -1,11 +1,11 @@
 ---
-to: src/_includes/layouts/<%= name %>/<%= name %>.stories.js
+to: src/_includes/layouts/<%= layout_name %>/<%= layout_name %>.stories.js
 ---
-<% camelizedName = h.inflection.camelize(name) -%>
+<% camelizedName = h.inflection.camelize(layout_name) -%>
 
-import <%= camelizedName %>Template from './<%= name %>.ejs';
-import './_<%= name %>.scss';
-import markdown from './<%= name %>.md';
+import <%= camelizedName %>Template from './<%= layout_name %>.ejs';
+import './_<%= layout_name %>.scss';
+import markdown from './<%= layout_name %>.md';
 
 export default {
   title: 'Layouts/<%= camelizedName %>s',
