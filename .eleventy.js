@@ -30,7 +30,11 @@ module.exports = function (eleventyConfig) {
             return data.page.filePathStem.replace(/^\/styles\//, "/css/") + ".css";
           };
         }
-      }
+      },
+      sass: {
+        style: "compressed",
+        sourceMap: true
+      },
     },
   ]);
 
