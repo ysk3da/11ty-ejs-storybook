@@ -1,9 +1,6 @@
 ---
-to: src/styles/pages/_<%= name %>.scss
+to: '<%= have_style? `src/pages/${page_name}/_page-${h.changeCase.param(page_name)}.scss` : null %>'
 ---
-.p-<%= h.changeCase.param(name) %>-body {
-  width: 100%;
-}
-.p-<%= h.changeCase.param(name) %> {
+.page-<%= h.changeCase.param(name) %> {
   width: 100%;
 }

@@ -1,5 +1,5 @@
 ---
-to: src/pages/<%= name %>/<%= name %>.stories.js
+to: '<%= have_story? `src/pages/${page_name}/${page_name}.stories.js` : null %>'
 ---
 <% camelizedName = h.inflection.camelize(name) -%>
 <% underscoredName = h.inflection.underscore(name) -%>

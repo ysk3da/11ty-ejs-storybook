@@ -1,7 +1,6 @@
 ---
 to: src/pages/<%= name %>/<%= name %>.ejs
 ---
-<#% underscoredName = h.inflection.underscore(name) -%>
 <%
 var dt = new Date();
 var y = dt.getFullYear();
@@ -13,11 +12,10 @@ var today = y + "-" + m + "-" + d;
 layout: layouts/TheLayout/TheLayout.ejs
 title: <%= name %>のタイトル
 description: <%= name %>の概要
-bodyId: <%= h.changeCase.param(name) %>
-bodyClassNames: p-<%= h.changeCase.param(name) %>-body
+bodyId: pageid-<%= h.changeCase.param(name) %>
 permalink: <%= h.changeCase.param(name) %>.html
 date: <%= today %>
 ---
-<div class="<%= h.changeCase.param(name) %>">
+<div class="page-<%= h.changeCase.param(name) %>">
   <%= name %>
 </div>
