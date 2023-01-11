@@ -1,5 +1,4 @@
 import Home from '../../../dist/home.html';
-import '../../styles/pages/_Home.scss';
 import markdown from './Home.md';
 
 export default {

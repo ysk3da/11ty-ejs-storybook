@@ -14,7 +14,7 @@ layout: layouts/TheLayout/TheLayout.ejs
 title: <%= name %>のタイトル
 description: <%= name %>の概要
 bodyId: <%= h.changeCase.param(name) %>
-bodyClassNames: <%= h.changeCase.param(name) %>
+bodyClassNames: p-<%= h.changeCase.param(name) %>-body
 permalink: <%= h.changeCase.param(name) %>.html
 date: <%= today %>
 ---

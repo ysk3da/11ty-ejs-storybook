@@ -1,4 +1,4 @@
 ---
 to: src/pages/<%= name %>/<%= name %>.md
 ---
-# <%= name %>
+# <%= name %>ページについて
