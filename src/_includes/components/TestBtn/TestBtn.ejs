@@ -1,8 +1,14 @@
 <%
 if(typeof props === 'undefined') {
-  const props = {}
+  const props = {
+    disabled: false, // boolean
+    type: 'button', // submit | reset | button
+    label: 'MyButton Label', // html | string
+    modefireClass: '', // string
+    jsClass: '', // string
+  }
 }
 -%>
-<div class="c-test-btn">
-  <%= props.label %> component
-</div>
+<button class="c-test-btn <%= props.modefireClass %> <%= props.jsClass %>" <%= props.disabled ? 'disabled' : '' %> type="<%= props.type %>" >
+  <%= props.label %>
+</button>
