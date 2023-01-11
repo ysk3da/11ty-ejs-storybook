@@ -35,6 +35,11 @@ module.exports = {
 
     return config;
   },
+  staticDirs: [
+    { from: '../dist/css', to: '/css' },
+    { from: '../dist/js', to: '/js' },
+    { from: '../dist/img', to: '/img' }
+  ],
   "stories": [
     "../src/**/*.stories.mdx",
     "../src/**/*.stories.@(js|jsx|ts|tsx)"
