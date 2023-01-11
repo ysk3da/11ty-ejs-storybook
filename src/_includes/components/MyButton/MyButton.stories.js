@@ -1,5 +1,5 @@
 import MyButton from './MyButton.ejs'; // コンポーネントを読み込む
-import '../../../styles/components/_MyButton.scss';
+import './_MyButton.scss';
 import markdown from './MyButton.md';
 
 export default {
