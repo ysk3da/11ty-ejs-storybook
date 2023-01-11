@@ -8,7 +8,7 @@
     "build": "npx @11ty/eleventy",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "gen-component-help": "npx hygen generator help",
+    "hygen-help": "npx hygen generator help",
     "add-component": "npx hygen generator components",
     "add-layout": "npx hygen generator layouts",
     "add-page": "npx hygen generator pages"
