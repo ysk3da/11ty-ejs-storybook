@@ -1,6 +1,5 @@
 
 import TheLayoutTemplate from './TheLayout.ejs';
-import './_TheLayout.scss';
 import markdown from './TheLayout.md';
 
 export default {

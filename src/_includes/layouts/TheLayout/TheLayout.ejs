@@ -1,22 +1,17 @@
-<%# 初期値を設定// -%>
 <%
 if(typeof content === 'undefined') {
   const content = 'コンテンツが入ります';
-}
+};
 if(typeof title === 'undefined') {
   const title = 'Default title';
-}
+};
 if(typeof description === 'undefined') {
   const description = 'Default description';
-}
+};
 if(typeof bodyId === 'undefined') {
   const bodyId = '';
-}
-if(typeof bodyClassNames === 'undefined') {
-  const bodyClassNames = '';
-}
+};
 -%>
-<%# //初期値を設定 -%>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -27,7 +22,7 @@ if(typeof bodyClassNames === 'undefined') {
   <meta name="description" content="<%= description %>">
   <link ref="stylesheet" href="/css/style.css" />
 </head>
-<body id="<%= bodyId %>" class="l-the-layout <%= bodyClassNames %>">
+<body id="<%= bodyId %>" class="">
     <main>
     <%- content %>
   </main>

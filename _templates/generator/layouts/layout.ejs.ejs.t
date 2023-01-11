@@ -25,7 +25,7 @@ if(typeof bodyId === 'undefined') {
   <meta name="description" content="<%%= description %>">
   <link ref="stylesheet" href="/css/style.css" />
 </head>
-<body id="<%%= bodyId %>" class="<%= have_style? `l-<%= ${h.changeCase.param(layout_name)}` : null %>">
+<body id="<%%= bodyId %>" class="<%= have_style? `l-${h.changeCase.param(layout_name)}` : null %>">
   <%#%- include("../components/TheHeader/TheHeader.ejs", {props:{classNames: ""}}) -%>
   <main>
     <%%- content %>
