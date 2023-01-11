@@ -1,0 +1,7 @@
+a,
+button {
+  &:hover {
+    // hoverのときだけ transition
+    transition: all 300ms 0ms;
+  }
+}
