@@ -7,5 +7,5 @@ if(typeof props === 'undefined') {
 }
 -%%>
 <div class="c-<%= h.changeCase.param(name) %>">
-  <%%= props.label %> component
+  <%%= props.label -%> component
 </div>
