@@ -119,13 +119,19 @@ npm i -D @storybook/builder-webpack5 @storybook/manager-webpack5
 
 ## hygenの導入
 
+[Hygen Docs](https://www.hygen.io/docs/quick-start)
+
+[hygen で生成 - 対話形式の Component 雛形 -](https://zenn.dev/takepepe/articles/hygen-template-generator)
+
+[hygenで分岐する選択肢を作成する](https://qiita.com/ikea_shark_jk/items/bb50dc60edc3aee95d3c)
+
 [[Vue.js] Hygenで作るコンポーネントジェネレーター](https://tenderfeel.xsrv.jp/javascript/4244/)
 
 ## Dart Sassのためのファイル構成の考察
 
 [Sassで@useと@forwardを使ったサイト設計 - @importから切り替える手順](https://yumegori.com/dart-sass-method)
 
-[]()
+[[CSS設計] 私のためのFLOCSSまとめ](https://qiita.com/super-mana-chan/items/644c6827be954c8db2c0)
 
 ## Reference
 
