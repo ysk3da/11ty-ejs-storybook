@@ -3,9 +3,9 @@ to: src/_includes/components/<%= name %>/<%= name %>.stories.js
 ---
 <% camelizedName = h.inflection.camelize(name) -%>
 
-import <%= camelizedName %>Template from '<%= name %>.ejs';
-import '_<%= name %>.scss';
-import markdown from '<%= name %>.md';
+import <%= camelizedName %>Template from './<%= name %>.ejs';
+import './_<%= name %>.scss';
+import markdown from './<%= name %>.md';
 
 export default {
   title: 'Components/<%= camelizedName %>s',

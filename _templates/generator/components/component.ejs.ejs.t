@@ -6,6 +6,6 @@ if(typeof props === 'undefined') {
   const props = {}
 }
 -%%>
-<div class="<%= h.changeCase.param(name) %>">
+<div class="c-<%= h.changeCase.param(name) %>">
   <%%= props.label %> component
 </div>
