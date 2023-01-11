@@ -1,10 +1,10 @@
 ---
 to: '<%= have_story? `src/pages/${page_name}/${page_name}.stories.js` : null %>'
 ---
-<% camelizedName = h.inflection.camelize(name) -%>
-<% underscoredName = h.inflection.underscore(name) -%>
-import <%= camelizedName %> from '../../../dist/<%= h.changeCase.param(name) %>.html';
-import markdown from './<%= name %>.md';
+<% camelizedName = h.inflection.camelize(page_name) -%>
+<% underscoredName = h.inflection.underscore(page_name) -%>
+import <%= camelizedName %> from '../../../dist/<%= h.changeCase.param(page_name) %>.html';
+import markdown from './<%= page_name %>.md';
 
 export default {
   title: 'Pages/<%= camelizedName %>',

@@ -1,5 +1,5 @@
 ---
-to: src/pages/<%= name %>/<%= name %>.ejs
+to: src/pages/<%= page_name %>/<%= page_name %>.ejs
 ---
 <%
 var dt = new Date();
@@ -10,12 +10,12 @@ var today = y + "-" + m + "-" + d;
 -%>
 ---
 layout: layouts/TheLayout/TheLayout.ejs
-title: <%= name %>のタイトル
-description: <%= name %>の概要
-bodyId: pageid-<%= h.changeCase.param(name) %>
-permalink: <%= h.changeCase.param(name) %>.html
+title: <%= page_name %>のタイトル
+description: <%= page_name %>の概要
+bodyId: pageid-<%= h.changeCase.param(page_name) %>
+permalink: <%= h.changeCase.param(page_name) %>.html
 date: <%= today %>
 ---
-<div class="page-<%= h.changeCase.param(name) %>">
-  <%= name %>
+<div class="page-<%= h.changeCase.param(page_name) %>">
+  <%= page_name %>
 </div>
