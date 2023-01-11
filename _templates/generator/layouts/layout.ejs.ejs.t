@@ -14,9 +14,6 @@ if(typeof description === 'undefined') {
 if(typeof bodyId === 'undefined') {
   const bodyId = '';
 };
-if(typeof bodyClassNames === 'undefined') {
-  const bodyClassNames = '';
-};
 -%%>
 <!DOCTYPE html>
 <html lang="ja">
@@ -28,7 +25,7 @@ if(typeof bodyClassNames === 'undefined') {
   <meta name="description" content="<%%= description %>">
   <link ref="stylesheet" href="/css/style.css" />
 </head>
-<body id="<%%= bodyId %>" class="l-<%= h.changeCase.param(layout_name) %> <%%= bodyClassNames %>">
+<body id="<%%= bodyId %>" class="<%= have_style? `l-<%= ${h.changeCase.param(layout_name)}` : null %>">
   <%#%- include("../components/TheHeader/TheHeader.ejs", {props:{classNames: ""}}) -%>
   <main>
     <%%- content %>
