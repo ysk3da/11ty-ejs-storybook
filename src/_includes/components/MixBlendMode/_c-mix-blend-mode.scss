@@ -1,0 +1,28 @@
+.c-mix-blend-mode {
+  // display: flex;
+  // justify-content: center;
+  // position: relative;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+
+  &__img {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+
+  &__text {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    // position: absolute;
+    mix-blend-mode: overlay; /* オーバーレイを指定 */
+    color: white;
+    font-size: 100px;
+    font-weight: bold;
+    // bottom: 20px;
+    // left: 20px;
+    // width: 100%;
+    // display: flex;
+    // justify-content: center;
+    }
+}
