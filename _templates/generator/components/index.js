@@ -1,3 +1,8 @@
+const fs = require('fs');
+const indexPath = 'src/styles/components/_index.scss';
+// 文字コードを直接指定
+let indexScss = fs.readFileSync(indexPath, 'utf-8');
+
 module.exports = {
   prompt: ({ inquirer, args }) => {
     const questions = [
@@ -44,6 +49,11 @@ module.exports = {
         // const props = have_props ? '(props)' : '()'
         // const tag = args.tag ? args.tag : 'div'
         // return { ...answers, path, abs_path, type_annotate, props, tag }
+        indexScss += `\n@forward '../../_includes/components/${answers.name}/${answers.name}';`;
+        fs.writeFileSync(indexPath, indexScss, (err) => {
+          if (err) throw err;
+          console.log('components _index.scss success');
+        });
         return {...answers}
       })
   }
