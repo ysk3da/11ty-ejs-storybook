@@ -7,14 +7,82 @@ permalink: index.html
 date: 2023-01-11
 ---
 <div class="page-index">
-  Index
-  <%- include('../../_includes/components/TestBtn/TestBtn.ejs', {
-    props:{
-      disabled: false, // boolean
-      type: 'button', // submit | reset | button
-      label: 'ボタン', // html | string
-      modefireClass: '', // string
-      jsClass: '', // string
-    }
-  }) -%>
+  <section class="mb-10">
+    Index
+    <%- include('../../_includes/components/TestBtn/TestBtn.ejs', {
+      props:{
+        disabled: false, // boolean
+        type: 'button', // submit | reset | button
+        label: 'ボタン', // html | string
+        modefireClass: '', // string
+        jsClass: '', // string
+      }
+    }) -%>
+  </section>
+
+  <div class="flex mb-10">
+    <select name="select1" id="select1" style="width:100%;display: block;">
+      <option value="">-</option>
+      <option value="">-</option>
+      <option value="">-</option>
+      <option value="">-</option>
+    </select><!-- /# -->
+  </div>
+
+  <div class="flex mb-10">
+    <select name="select2" id="select2" style="width:100%;">
+      <option value="">あ</option>
+      <option value="">い</option>
+      <option value="">う</option>
+      <option value="">え</option>
+    </select><!-- /# -->
+  </div>
+  <table>
+    <tbody>
+      <tr>
+        <!-- <td>
+          tdのテキストです
+        </td> -->
+        <td>
+          <select name="select_td" id="select_td" style="width:100%;">
+            <option value="">あ</option>
+            <option value="">い</option>
+            <option value="">う</option>
+            <option value="">え</option>
+          </select><!-- /# -->
+        </td>
+        <td>
+          <div class="flex">
+            <select name="select_td2" id="select_td2" style="width:100%;">
+              <option value="">あ</option>
+              <option value="">い</option>
+              <option value="">う</option>
+              <option value="">え</option>
+            </select><!-- /# -->
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
+<style>
+  .page-index {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  select {
+    background-color: #e6e6e6;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    max-width: 100%;
+  }
+  .flex {
+    display: flex;
+  }
+  .mb-10 {
+    margin-bottom: 10px;
+  }
+  table {
+    width: 100%;
+  }
+</style>
