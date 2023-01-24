@@ -15,3 +15,9 @@ flexボックスを利用しています。
 はみ出る分は親要素（`.container`）で`overflow:hidden;`しています。
 
 列数と隙間を変数で管理して、class名をコントロールすることで、手間を省いています。
+
+## リファレンス
+
+- [【CSS】コンテンツ数に左右されない！display:flexで最後の要素だけ左寄せする方法](https://senoweb.jp/note/displayflex-tip/)
+
+- [Sass：eachやforを使って繰り返し記述する手間を省く](https://www.nxworld.net/sass-each-and-for-snippets.html)

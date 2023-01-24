@@ -11,7 +11,8 @@
 // bootstrap5 式
 
 .container {
-  overflow: hidden; // 親要素にoverflow:hidden;忘れずに!!
+  // overflow: hidden; // 親要素にoverflow:hidden;忘れずに!! -> なくても良いもよう.でもdivでラップはしないとだめ
+  width: 100%;
 }
 
 // utilityで使いたいのでBEM方式では書いていない
