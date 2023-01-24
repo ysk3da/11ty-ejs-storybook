@@ -1,6 +1,5 @@
 .c-list-view {
   width: 100%;
-  overflow: hidden; // 親要素にoverflow:hidden;忘れずに!!
   .card {
     text-align: center;
     img {
@@ -10,6 +9,12 @@
 }
 
 // bootstrap5 式
+
+.container {
+  overflow: hidden; // 親要素にoverflow:hidden;忘れずに!!
+}
+
+// utilityで使いたいのでBEM方式では書いていない
 
 .row {
   --gutter-x: 1.5rem; // default
@@ -49,6 +54,7 @@
 }
 
 // 隙間のコントロール
+// 下記のように必要な分だけ定義するか、↑の列のコントロールのように一括で定義してしまうか
 // row colのgutterカスタマイズ
 $guttersArr:(
   0: 0,
