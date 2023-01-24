@@ -1,0 +1,72 @@
+.c-list-view {
+  width: 100%;
+  overflow: hidden; // 親要素にoverflow:hidden;忘れずに!!
+  .card {
+    text-align: center;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+// bootstrap5 式
+
+.row {
+  --gutter-x: 1.5rem; // default
+  --gutter-y: 0; // default
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1*var(--gutter-y));
+  margin-right: calc(-.5*var(--gutter-x));
+  margin-left: calc(-.5*var(--gutter-x));
+  &>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--gutter-x)*.5);
+    padding-left: calc(var(--gutter-x)*.5);
+    margin-top: var(--gutter-y);
+  }
+}
+
+.col {
+  flex: 1 0 0%; // 下記のショートハンド
+  // flex-grow: 1;
+  // flex-shrink: 0;
+  // flex-basis: 0%;
+}
+
+// 列のコントロール
+@for $i from 1 through 10 {
+  $width: percentage(calc(1 / $i));
+  .row-cols-#{$i}>*{
+    flex: 0 0 auto; // 下記のショートハンド
+    // flex-grow: 0;
+    // flex-shrink: 0;
+    // flex-basis: auto;
+    width: $width;
+  }
+}
+
+// 隙間のコントロール
+// row colのgutterカスタマイズ
+$guttersArr:(
+  0: 0,
+  "1_75p": 1.75%,
+  2p: 2%,
+  "2_5p": 2.5%,
+  5p: 5%,
+  10p: 10%,
+);
+@each $gutter, $value in $guttersArr {
+  .gx-#{$gutter} {
+    --gutter-x:#{$value};
+  }
+  .gy-#{$gutter} {
+    --gutter-y:#{$value};
+  }
+  .g-#{$gutter} {
+    --gutter-x:#{$value};
+    --gutter-y:#{$value};
+  }
+}
