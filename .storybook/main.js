@@ -33,8 +33,14 @@ module.exports = {
       },
     );
 
+    // alias setting
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@': path.resolve(__dirname, '../src'),
+    };
     return config;
   },
+  // preview時のpublic dir
   staticDirs: [
     { from: '../dist/css', to: '/css' },
     { from: '../dist/js', to: '/js' },
