@@ -22,15 +22,15 @@
   --gutter-y: 0; // default
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1*var(--gutter-y));
-  margin-right: calc(-.5*var(--gutter-x));
-  margin-left: calc(-.5*var(--gutter-x));
+  margin-top: calc(-1*var(--gutter-y)); // 子要素のgutter分をキャンセル
+  margin-right: calc(-.5*var(--gutter-x)); // 子要素のgutter分をキャンセル
+  margin-left: calc(-.5*var(--gutter-x)); // 子要素のgutter分をキャンセル
   &>* {
     flex-shrink: 0;
     width: 100%;
     max-width: 100%;
-    padding-right: calc(var(--gutter-x)*.5);
-    padding-left: calc(var(--gutter-x)*.5);
+    padding-right: calc(var(--gutter-x)*.5); // デザインそのままを読めるように半分にする
+    padding-left: calc(var(--gutter-x)*.5); // デザインそのままを読めるように半分にする
     margin-top: var(--gutter-y);
   }
 }
