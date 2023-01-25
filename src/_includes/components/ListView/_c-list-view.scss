@@ -1,3 +1,5 @@
+@use '../../../styles/global' as global;
+
 .c-list-view {
   width: 100%;
   .card {
@@ -51,6 +53,12 @@
     // flex-shrink: 0;
     // flex-basis: auto;
     width: $width;
+  }
+  @include global.mq-up(md) {
+    .row-cols-md-#{$i}>*{
+      flex: 0 0 auto; // 下記のショートハンド
+      width: $width;
+    }
   }
 }
 
