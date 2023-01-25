@@ -50,7 +50,7 @@ module.exports = {
     "@storybook/addon-interactions",
     // added
     '@storybook/addon-a11y',
-    '@storybook/addon-controls',
+    // '@storybook/addon-controls',
     '@storybook/addon-storysource',
     '@storybook/addon-notes/register',
     '@storybook/addon-postcss'
