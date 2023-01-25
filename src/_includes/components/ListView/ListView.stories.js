@@ -7,7 +7,9 @@ export default {
   title: 'Components/ListViews',
   component: ListViewTemplate,
   argTypes: {
-    label: { control: 'text' },
+    cardNum: { control: 'number' },
+    colNum: { control: 'number' }, // _c-list-view.scss依存 1~10の数字
+    ulClassNames: { control: 'text' },
   },
   parameters: {
     notes: { markdown } // markdown 読み込み
@@ -22,5 +24,7 @@ export const normal = (args) => {
 };
 
 normal.args = {
-  label: 'ListView',
+  cardNum: 12,
+  colNum: 3, // _c-list-view.scss依存 1~10の数字
+  ulClassNames: "gx-2p row-cols-md-6",
 }
