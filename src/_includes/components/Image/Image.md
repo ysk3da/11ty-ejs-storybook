@@ -20,8 +20,8 @@
 
 ## References
 
-- [<img>: 画像埋め込み要素](https://developer.mozilla.org/ja/docs/Web/HTML/Element/img)
-- [<picture>: 画像要素](https://developer.mozilla.org/ja/docs/Web/HTML/Element/picture)
-- [<source>: メディアまたは画像のソース要素](https://developer.mozilla.org/ja/docs/Web/HTML/Element/source)
+- [img: 画像埋め込み要素](https://developer.mozilla.org/ja/docs/Web/HTML/Element/img)
+- [picture: 画像要素](https://developer.mozilla.org/ja/docs/Web/HTML/Element/picture)
+- [source: メディアまたは画像のソース要素](https://developer.mozilla.org/ja/docs/Web/HTML/Element/source)
 - [HTMLのsrcset属性やpictureタグを使ったレスポンシブイメージを解説](https://moshashugyo.com/media/responsive-img)
 - [CSSで縦横比(アスペクト比)を固定できるaspect-ratioについて！具体的な使い道も紹介！](https://moshashugyo.com/media/aspect-ratio)
