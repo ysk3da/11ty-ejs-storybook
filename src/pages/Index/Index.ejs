@@ -17,4 +17,15 @@ date: 2023-01-11
       jsClass: '', // string
     }
   }) -%>
+  <div style="max-width: 400px;">
+    <!-- <div> -->
+      <%- include('../../_includes/components/Image/Image.ejs', {props: {
+        src: "https://placehold.jp/400x200.png",
+        alt: "ダミー",
+        width: 200,
+        height: 100,
+        loading: "lazy",
+      }}) %>
+    <!-- </div> -->
+  </div>
 </div>

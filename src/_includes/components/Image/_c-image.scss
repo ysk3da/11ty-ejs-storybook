@@ -1,0 +1,11 @@
+.c-image {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: auto;
+  }
+}
