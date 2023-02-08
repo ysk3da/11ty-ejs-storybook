@@ -139,3 +139,9 @@ npm i -D @storybook/builder-webpack5 @storybook/manager-webpack5
 
 
 ## memo
+
+### project root の alias 設定
+
+- [TypeScript + Gatsby + Storybook環境でimport aliasを利用する](https://tamalog.szmd.jp/storybook-absolute-imports/)
+
+--> eleventy-sass側が公式が用意がないので諦め

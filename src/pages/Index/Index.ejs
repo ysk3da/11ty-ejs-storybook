@@ -18,3 +18,12 @@ date: 2023-01-11
     }
   }) -%>
 </div>
+<section style="max-width: 800px;margin: 30px auto;">
+  <%- include('../../_includes/components/ListView/ListView.ejs', {
+    props:{
+      cardNum: 12,
+      colNum: 2,
+      ulClassNames: "gx-2p row-cols-md-6",
+    }
+  }) -%>
+</section>
