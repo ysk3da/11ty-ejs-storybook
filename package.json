@@ -13,7 +13,9 @@
     "hygen-help": "npx hygen generator help",
     "add-component": "npx hygen generator components",
     "add-layout": "npx hygen generator layouts",
-    "add-page": "npx hygen generator pages"
+    "add-page": "npx hygen generator pages",
+    "lint": "run-s lint:*",
+    "lint:ejs": "npx ejslint 'src/**/*.ejs'"
   },
   "keywords": [],
   "author": "",
@@ -35,7 +37,8 @@
     "@storybook/manager-webpack4": "^6.5.15",
     "@storybook/manager-webpack5": "^6.5.15",
     "@storybook/testing-library": "^0.0.13",
-    "babel-loader": "^8.3.0"
+    "babel-loader": "^8.3.0",
+    "ejs-lint": "^2.0.0"
   },
   "dependencies": {
     "@storybook/addon-postcss": "^2.0.0",
